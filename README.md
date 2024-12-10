@@ -28,7 +28,7 @@ From the above characteristic table, we can directly write the next state equati
 
 **Procedure**
 
-1.Define Module: Define a Verilog module for the T flip-flop with inputs (T, CLK) and outputs (Q, Q_bar).
+/* 1.Define Module: Define a Verilog module for the T flip-flop with inputs (T, CLK) and outputs (Q, Q_bar).
 
 2.Declare Inputs and Outputs: Declare input and output ports for the module.
 
@@ -40,9 +40,11 @@ From the above characteristic table, we can directly write the next state equati
 
 6.Verify Output Behavior: Verify that the output behavior of the T flip-flop matches the expected behavior defined by its functional table.
 
-7.Check for Race Conditions: Ensure that there are no race conditions or undefined states in the design by analyzing the timing and sequence of input changes.
+7.Check for Race Conditions: Ensure that there are no race conditions or undefined states in the design by analyzing the timing and sequence of input changes. */
 
 **PROGRAM**
+
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:DHANUJA M RegisterNumber:24901079
 module TFLIPFLOPPOSEDGE( input clk, rst_n, input t,
 output reg q,
 output q_bar
@@ -59,13 +61,15 @@ q<=q;
 end
 assign q_bar = ~q;
 endmodule
+*/
+
 **RTL LOGIC FOR FLIPFLOPS**
-![image](https://github.com/user-attachments/assets/9b9ef10b-dc8b-4fde-b21d-df66e7f69a8b)
+![image](https://github.com/ragnarroshan/T-FLIPFLOP-POSEDGE/assets/147474287/66f76514-30c5-4faa-8049-0155b6e627df)
+
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![image](https://github.com/user-attachments/assets/d3e70c3b-b234-4ef1-8681-9ca9ec0cd0ec)
 
+![image](https://github.com/ragnarroshan/T-FLIPFLOP-POSEDGE/assets/147474287/69fc29ee-c31a-46e8-8701-cc3b07dcab11)
 
 **RESULTS**
 Hence, T flipflop using verilog and validating their functionality using their functional tables is implemented.
-
